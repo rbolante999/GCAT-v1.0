@@ -1,0 +1,45 @@
+{
+  "name": "genesys-cloud-org-audit-mcp",
+  "version": "1.9.1",
+  "description": "Read-only Genesys Cloud Org Audit MCP server for data collection, object lifecycle audit, flows, conversations, Channel Blueprint reporting, metrics, license, API, subscription, billing and AI usage audit.",
+  "type": "module",
+  "main": "src/mcp-server.js",
+  "bin": {
+    "genesys-cloud-org-audit-mcp": "./src/mcp-server.js"
+  },
+  "scripts": {
+    "start": "node src/mcp-server.js",
+    "check": "node --check src/gc-core.js && node --check src/mcp-server.js",
+    "mcp:start": "node src/mcp-server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@json2csv/plainjs": "^7.0.6",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/genesys-cloud-org-audit-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude-desktop",
+    "genesys-cloud",
+    "contact-center",
+    "audit",
+    "analytics",
+    "blueprint"
+  ],
+  "license": "MIT",
+  "files": [
+    "src/",
+    "README.md",
+    "TESTED.md",
+    ".env.example",
+    "CLAUDE_DESKTOP_CONFIG_EXAMPLES.md"
+  ]
+}

@@ -1,0 +1,10 @@
+.env
+.env.*
+node_modules/
+exports/*.csv
+exports/*.json
+exports/*.md
+claude_desktop_config.json
+.vscode/
+.idea/
+*.log
